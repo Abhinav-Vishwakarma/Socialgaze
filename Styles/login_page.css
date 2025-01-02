@@ -1,4 +1,4 @@
-//* Global Reset */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +10,7 @@ html, body {
   height: 100%;
   overflow: hidden; /* Prevent scrollbars */
   font-family: 'Arial', sans-serif;
-  background-image: url("../Public/images/backgroiund.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 /* Navbar Styling */
@@ -25,6 +23,7 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 10%;
 }
 
 /* Logo */
@@ -63,12 +62,11 @@ html, body {
 
 .cta {
   color: white;
-  background-color: rgb(27, 27, 180);
+  background-color: rgb(38, 252, 56);
   color: white;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 5px;
-  
 }
 
 .cta:hover {
@@ -77,13 +75,14 @@ html, body {
 
 /* Footer Styling */
 .footer {
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%);
   color: black;
   text-align: center;
   padding: 20px;
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 6rem;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%);
 }
 
 .social-icons a {
@@ -98,36 +97,47 @@ html, body {
   color: black;
 }
 
-/* Centered Image (.ldki) */
-.ldki {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  max-width: 50%;
-  height: auto;
-}
 
-/* Flipped Emoji (.emj) */
 .emj {
   position: absolute;
-  bottom: 10%; /* Adjust to avoid negative positioning */
-  left: 85%; /* Ensure it stays visible */
+  bottom: 0%; 
+  left: 75%; 
   transform: scaleX(-1); /* Flip horizontally */
-  max-width: 20%;
-  height: auto;
+  /* max-width: 20%;
+  height: auto; */
+}
+
+.container {
+  width: auto;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items:center; */
+  /* padding:10px; */
+ 
+}
+.side_panel{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  background-image: url("../Public/images/backgroiund.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Login Section */
 /* Login Container */
 .login {
-  width: 450px;
+  min-width: 450px;
   padding: 30px;
   height: 100%;
-  background: #ffffff;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1s ease-in-out;
+  /* border-radius: 10px; */
 }
 
 /* Heading */
@@ -249,11 +259,11 @@ html, body {
   }
 }
 
-.pricingpage_text{
+.pricingpage_text {
   font-weight: bold;
   text-shadow: #333;
- right: 30%;
- font-family: "Cookie", serif;
+  right: 30%;
+  font-family: "Cookie", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 50px;
@@ -261,19 +271,11 @@ html, body {
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
-
 }
 
 .emoji {
   position: absolute;
   height: 40%;
-   left:0%;
-margin-left: 0;
+  left: 0%;
+  margin-left: 0;
 }
-
-/* 
-.cookie-regular
-  font-family: "Cookie", serif;
-  font-weight: 400;
-  font-style: normal;
-} */
