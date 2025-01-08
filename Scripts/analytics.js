@@ -12,7 +12,7 @@ const platformData = {
         genderSplit: [55, 45], // Male, Female
     },
     youtube: {
-        platformLogo: "fa-brands fa-youtube platform-logo",
+        platformLogo: "fa-brands fa-youtube platform-logo yt",
         followers: '1.2M',
         impressions: '500k',
         likes: '20k',
