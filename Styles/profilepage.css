@@ -1,0 +1,33 @@
+.left-panel {
+    width: 350px;
+    height: 100%;
+    background-color: gray;
+    padding: 20px;
+  }
+  
+  .left-panel .profile-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .left-panel .profile h3 {
+    margin: 10px 10px;
+   
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .left-panel .social-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .left-panel .social-nav li {
+    font-size: larger;
+    padding-left: 10px;
+    margin: 10px 10px;
+    color: rgb(14, 165, 150);
+  }
+  .left-panel .social-nav li:hover{
+    color: rgb(234, 228, 228);
+    font-size: larger;
+  }
