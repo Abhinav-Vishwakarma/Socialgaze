@@ -198,3 +198,6 @@ p {
         transform: translateX(0);
     }
 }
+.icon-red{
+    color:red
+}

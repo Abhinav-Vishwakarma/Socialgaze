@@ -1,4 +1,5 @@
 /* Global Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,15 @@ html, body {
   font-family: 'Arial', sans-serif;
 
 }
+.homepage_des h1 {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  word-wrap: break-word;
+  color: #370428;
+  font-weight: bold;
+}
 
 /* Navbar Styling */
 .navbar {
@@ -20,10 +30,11 @@ html, body {
   align-items: center;
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%);
   padding: 15px 30px;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 100;
   height: 10%;
+  width: 100%;
 }
 
 /* Logo */
@@ -78,7 +89,7 @@ html, body {
   color: black;
   text-align: center;
   padding: 20px;
-  position: absolute;
+  /* position: sticky; */
   bottom: 0;
   width: 100%;
   height: 6rem;
@@ -306,6 +317,9 @@ html, body {
   height: 80%;
   padding: 0;
   margin: 0;
+  position:sticky;
+  margin-top: 4.5%;
+  align-items: center;
 
 } 
 
@@ -316,8 +330,6 @@ html, body {
   margin:0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  text-align: center;
   
 }
 .card_body{
@@ -330,4 +342,66 @@ color:white;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* Info Section Styling */
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.info-description {
+  flex: 1;
+}
+
+.info-description h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info-description p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Keyframe Animation */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
 }

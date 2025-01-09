@@ -52,12 +52,12 @@ const platformData = {
 // Function to Render Dashboard Content
 function renderDashboard(platform) {
     const data = platformData[platform];
-
+    const isYouTube = platform === 'youtube';
     // Generate HTML Content
     const htmlContent = `
       <div class="header">
         <div class="platform-info">
-          <i class="${data.platformLogo}"></i>
+        <i class="${data.platformLogo} ${isYouTube ? 'icon-red' : ''}"></i>
           <div>
             <h1>${data.followers}</h1>
             <p>Followers</p>
