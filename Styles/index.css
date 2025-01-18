@@ -1,16 +1,28 @@
 /* Global Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 html, body {
   width: 100%;
   height: 100%;
-  overflow: scroll; 
+  /* overflow: scroll;  */
   font-family: 'Arial', sans-serif;
+  background-color:#000000;
 
+}
+.homepage_des h1 {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  word-wrap: break-word;
+  color: #370428;
+  font-weight: bold;
 }
 
 /* Navbar Styling */
@@ -18,17 +30,19 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%);
+  background-color:#343A40;
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%); */
   padding: 15px 30px;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 100;
   height: 10%;
+  width: 100%;
 }
 
 /* Logo */
 .logo a {
-  color: black;
+  color: rgb(255, 250, 250);
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -45,14 +59,19 @@ html, body {
 }
 
 .nav-links a {
-  color: #79155b;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-
+.section1{
+  background-image: url("https://t4.ftcdn.net/jpg/07/44/67/69/360_F_744676943_MpWhzv8Bc9QJ25Z5oQMhved6wzZd2mxk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
 .nav-links a:hover {
   background-color: #007bff;
 }
@@ -62,7 +81,7 @@ html, body {
 
 .cta {
   color: white;
-  background-color: #f581c1;
+  background-color: #6ddaf2;
   color: white;
   font-weight: bold;
   padding: 10px 20px;
@@ -78,15 +97,16 @@ html, body {
   color: black;
   text-align: center;
   padding: 20px;
-  position: absolute;
+  /* position: sticky; */
   bottom: 0;
   width: 100%;
   height: 6rem;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%);
+  background-color: #343A40;
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%); */
 }
 
 .social-icons a {
-  color: grey;
+  color: whitesmoke;
   font-size: 24px;
   margin: 0 10px;
   text-decoration: none;
@@ -99,29 +119,30 @@ html, body {
 
 
 .emj {
-  position: absolute;
-  bottom: 0%; 
-  left: 75%; 
+  position:relative ;
+  top: 15%; 
+  left: 10%; 
   transform: scaleX(-1); /* Flip horizontally */
   /* max-width: 20%;
   height: auto; */
 }
 
-.container {
+.containerLogin {
   width: auto;
   height: 80%;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between; 
   /* align-items:center; */
   /* padding:10px; */
- 
 }
+ 
+
 .side_panel{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* justify-content: space-between; */
   background-image: url("../Public/images/backgroiund.jpg");
   background-size: cover;
@@ -132,12 +153,16 @@ html, body {
 /* Login Container */
 .login {
   min-width: 450px;
-  padding: 30px;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 1s ease-in-out;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+  /* animation: fadeIn 1s ease-in-out; */
   /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  padding:50px;
+  padding-top: 120px;
+  
 }
 
 /* Heading */
@@ -147,7 +172,7 @@ html, body {
   color: #333;
   margin-bottom: 20px;
   text-align: center;
-  animation: slideDown 0.8s ease-out;
+  /* animation: slideDown 0.8s ease-out; */
 }
 
 /* Form Styling */
@@ -155,7 +180,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  animation: fadeIn 1.5s ease-in-out;
+  /* animation: fadeIn 1.5s ease-in-out; */
 }
 
 .login_form label {
@@ -292,9 +317,11 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url("../Public/images/backgroiund.jpg");
+   /* background-image:url(../Public/images/wallpaper\ 1.jpg);  */
+  background-color: #878568;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
  .homepage_body{
   display: flex;
@@ -306,18 +333,19 @@ html, body {
   height: 80%;
   padding: 0;
   margin: 0;
+  position:sticky;
+  margin-top: 4.5%;
+  align-items: center;
 
 } 
 
 .homepage_des{
-  background-image: url("../Public/images/Untitled_design-removebg-preview.png");
+  /* background-image: url("../Public/images/Untitled_design-removebg-preview.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   margin:0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  text-align: center;
   
 }
 .card_body{
@@ -330,4 +358,162 @@ color:white;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* Info Section Styling */
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #000000;
+  /* border-top: 1px solid #ddd; */
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.707); */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-image {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.info-description {
+  flex: 1;
+}
+
+.info-description h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info-description p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Keyframe Animation */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.ldki{
+  position: relative;
+  left: 25%;
+  top:6%
+
+}
+/* Base styles */
+/* Base styles */
+img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Entering the viewport */
+img.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Exiting the viewport */
+img.exiting {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+
+
+.card{
+   background-color:rgba(250, 237, 249, 0.333);  
+  color:rgba(255, 255, 255, 0.73);
+  background-image: url("https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg"); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+
+}
+
+.homepage_img{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.homepage_img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reviews-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px; /* Space between reviews */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Smooth snapping effect */
+  padding: 10px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.review {
+  flex: 0 0 300px; /* Set a fixed width for each review */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  scroll-snap-align: start; /* Align reviews to snap points */
+}
+.review p {
+  font-style: italic;
+  color: #333;
+}
+.review span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+
+.card h1{
+  font-family: "Playwrite CU", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
