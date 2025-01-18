@@ -6,13 +6,12 @@
   box-sizing: border-box;
  
 }
-
 html, body {
   width: 100%;
   height: 100%;
   /* overflow: scroll;  */
   font-family: 'Arial', sans-serif;
-  background-color:#000000;
+  background-color:#ffbaba;
 
 }
 .homepage_des h1 {
@@ -38,6 +37,8 @@ html, body {
   z-index: 100;
   height: 10%;
   width: 100%;
+  
+  
 }
 
 /* Logo */
@@ -100,7 +101,7 @@ html, body {
   /* position: sticky; */
   bottom: 0;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   background-color: #343A40;
   /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,200,228,1) 100%); */
 }
@@ -321,8 +322,9 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-   /* background-image:url(../Public/images/wallpaper\ 1.jpg);  */
-  background-color: #878568;
+  background-image: url(https://i.pinimg.com/736x/be/8b/4d/be8b4d2a69a2b38d5d0e3d2e23e6ea19.jpg);
+    /* background-image:url(../Public/images/wallpaper\ 1.jpg);   */
+  background-color:rgb(249, 249, 249);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -455,11 +457,11 @@ img.exiting {
 
 
 .card{
-   background-color:rgba(250, 237, 249, 0.333);  
+   background-color:rgba(255, 221, 220, 0.616);  
   /* color:rgba(255, 255, 255, 0.73); */
   color: black;
   
-  /* background-image: url("https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg");  */
+  /* background-image: url("https://t3.ftcdn.net/jpg/10/18/33/24/360_F_1018332429_QCZ4zl44eUlPHycKKDv7Vesq5q78gPt1.jpg");  */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   backdrop-filter: blur(10px);
@@ -478,7 +480,7 @@ img.exiting {
 }
 .reviews-section {
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: #EBA99D;
   text-align: center;
 }
 
@@ -497,30 +499,133 @@ img.exiting {
 
 .review {
   flex: 0 0 300px; /* Set a fixed width for each review */
-  background-color: #ffffff;
+  background-color: #ffbaba;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   scroll-snap-align: start; /* Align reviews to snap points */
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-memphis-playful-abstract-portfolio-pink-image_593420.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
 }
 .review p {
   font-style: italic;
-  color: #333;
+  color: #000000;
 }
 .review span {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #555;
+  color: #000000;
 }
 
 
 .card h1{
-  font-family: "Playwrite CU", serif;
+ font-family: Arial, Helvetica, sans-serif; 
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
   overflow-wrap: break-word;
   color: black;
+}
+/* Landing Page Styling */
+.landing-page1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-portfolio-pink-memphis-playful-image_593414.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  
+
+  
+
+}
+.landing-page2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-pink-memphis-playful-abstract-portfolio-image_593423.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+.landing-page3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-pink-playful-abstract-portfolio-memphis-image_593407.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Content Container Styling */
+.data {
+  max-width: 50%; /* Limit width of text container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading Styling */
+.h1_Home {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+/* Paragraph Styling */
+.p_Home {
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Image Styling */
+.img_Home {
+  width: 45%;
+  height: auto;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.305);
+}
+.img_Home1 {
+  width: 45%;
+  height: auto;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.305);
+  filter: hue-rotate(200deg) brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .data {
+    max-width: 90%; /* Full width for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .img_Home {
+    width: 80%;
+  }
+
+  .h1_Home {
+    font-size: 2rem;
+  }
+
+  .p_Home {
+    font-size: 1rem;
+  }
 }
