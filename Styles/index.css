@@ -95,7 +95,7 @@ html, body {
 
 /* Footer Styling */
 .footer {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
   /* position: sticky; */
@@ -130,7 +130,7 @@ html, body {
 
 .containerLogin {
   width: auto;
-  height: 80%;
+  height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between; 
@@ -297,13 +297,16 @@ html, body {
 }
 
 .pricingpage_text {
+  padding: 10px;
+  margin-top: 10px;
   font-weight: bold;
   text-shadow: #333;
   right: 30%;
-  font-family: "Cookie", serif;
-  font-weight: 400;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
-  font-size: 50px;
+  font-size: 30px;
   color: #370428;
   display: flex;
   justify-content: center;
@@ -328,6 +331,7 @@ html, body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 60px;
 }
  .homepage_body{
   display: flex;
@@ -480,7 +484,7 @@ img.exiting {
 }
 .reviews-section {
   padding: 40px;
-  background-color: #EBA99D;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -530,28 +534,126 @@ img.exiting {
   color: black;
 }
 /* Landing Page Styling */
-.landing-page1{
+/* .landing-page1{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100vh;
   padding: 20px;
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-portfolio-pink-memphis-playful-image_593414.jpg");
+  background-image: url("https://i.pinimg.com/736x/be/8b/4d/be8b4d2a69a2b38d5d0e3d2e23e6ea19.jpg");
   background-repeat:no-repeat;
   background-size: 100% 100%;
   
 
   
 
+
+} */
+ /* General Section Styling */
+ .landing-page1 {
+  display: flex;
+  
+  /* align-items: center; */
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/736x/73/d1/9a/73d19a793faa19e979afdfb9f5d184f0.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
 }
+.content_creators {
+  position: absolute;
+  align-items: right;
+  right: 60px;
+  border-radius: 10px;
+}
+
+/*
+.data {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: left;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Space between text and image */
+}
+
+/* .text-content {
+  flex: 1;
+} */
+
+/* .content_creators {
+   flex: 1; 
+  max-width: 400px; /* Set a fixed max width for the image 
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+/* }
+
+.h1_Home {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #fff; /* White text to stand out on the red background */
+/* }
+
+.p_Home {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff; /* White text for readability */
+
+
+/* Transparent cards for text with white and red theme */
+/* .card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+} */
+
+.p_Home, .p_text {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  text-align: center;
+  color: #2c2b2b; /* Red text color */
+}
+
+.p_Home {
+  font-size: 18px;
+  font-family: "Goblin One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #b12929; /* Red text color */
+}
+
+.p_text {
+  font-size: 16px;
+  color: #D32F2F; /* Red text color */
+}
+
+/* Hover effect for transparent cards */
+.p_Home:hover, .p_text:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
 .landing-page2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100vh;
   padding: 20px;
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-pink-memphis-playful-abstract-portfolio-image_593423.jpg");
-  background-repeat:no-repeat;
+  background-image: url(../Public/images/wallpaper\ 1.jpg);
+  /* background-image: url("https://i.pinimg.com/736x/be/8b/4d/be8b4d2a69a2b38d5d0e3d2e23e6ea19.jpg"); */
+   background-repeat:no-repeat;
   background-size: 100% 100%;
 }
 .landing-page3 {
@@ -567,17 +669,51 @@ img.exiting {
 
 /* Content Container Styling */
 .data {
-  max-width: 50%; /* Limit width of text container */
+  max-width: 100%; /* Limit width of text container */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.data1{
+  max-width: 50%; /* Limit width of text container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.h1_Home{
+  color: rgb(70, 6, 6);
+  font-size: 4rem;
+  gap: 5px;
+  font-family: "Goblin One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btnscoll a{
+  text-decoration: none;
+  background-color: #2c2b2b;
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  left: 170px;
+  border-radius: 20px;
+  border: none;
+  width: 200px; /* Set a fixed width */
+  padding: 10px 20px;
+}
 
 /* Heading Styling */
-.h1_Home {
+/* .h1_Home {
   font-size: 3rem;
   font-weight: bold;
   margin: 0 0 20px 0;
+  color:rgb(156, 11, 11);
+} */
+.h2_Home{
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  color:rgb(255, 253, 253);
 }
 
 /* Paragraph Styling */
@@ -585,7 +721,7 @@ img.exiting {
   font-size: 1.25rem;
   margin: 0;
   line-height: 1.6;
-}
+ }
 
 /* Image Styling */
 .img_Home {
@@ -595,14 +731,79 @@ img.exiting {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.305);
 }
-.img_Home1 {
+/* .img_Home1 {
   width: 45%;
   height: auto;
   max-height: 80%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.305);
   filter: hue-rotate(200deg) brightness(1.1);
+} */
+/* Section Styling */
+.landing-page2 {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #dcdcdc;
 }
+
+.landing-page2 .data {
+  text-align: center;
+}
+
+.landing-page2 .h1_Home {
+  font-size: 36px;
+  color: #D32F2F; /* Red color */
+  margin-bottom: 30px;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #D32F2F; /* Red color */
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -620,9 +821,11 @@ img.exiting {
   .img_Home {
     width: 80%;
   }
-
+ 
   .h1_Home {
-    font-size: 2rem;
+    font-size: 5rem;
+     color: red;
+
   }
 
   .p_Home {
