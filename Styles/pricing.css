@@ -4,3 +4,16 @@
     box-sizing: border-box;
      
   }
+ body{
+  background-color: azure;
+ }
+  
+.card-body ul li{
+  color:black;
+}
+.card-header{
+  color:white
+}
+.card-title{
+  color: black;
+}

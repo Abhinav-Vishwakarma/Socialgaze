@@ -1,11 +1,12 @@
-//* Global Reset */
+/* /Global Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
-  h1{
-    .cookie-regular {
+  h1{ */
+    /* .cookie-regular {
       font-family: "Cookie", serif;
       font-weight: 400;
       font-style: normal;
@@ -15,11 +16,12 @@
   html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Prevent scrollbars */
+   
     font-family: 'Arial', sans-serif;
     background-image: url("../Public/images/backgroiund.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+   
   }
 /* Navbar Styling */
 .navbar {
@@ -80,6 +82,77 @@
   .cta:hover {
     background-color: #e65c00;
   }
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+  
+  /* First section */
+  /* .px-4.pt-5.my-5.text-center.card {
+    background: linear-gradient(to bottom, #ff4d4d, #ffffff);
+    color: #333;
+  }
+  .px-4.pt-5.my-5.text-center.card h1 {
+    color: #ff4d4d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .px-4.pt-5.my-5.text-center.card p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .px-4.pt-5.my-5.text-center.card img {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Second section */
+  .container.col-xxl-8.px-4.py-5.card { */
+    background-color: #fff;
+  }
+  .container.col-xxl-8.px-4.py-5.card h1 {
+    color: #ff4d4d;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .container.col-xxl-8.px-4.py-5.card p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .container.col-xxl-8.px-4.py-5.card img {
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Third section */
+  .container.my-5.card {
+    background-color: #fff;
+  }
+  .container.my-5.card h1 {
+    color: #ff4d4d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .container.my-5.card p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .container.my-5.card img {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
   
   /* Footer Styling */
   .footer {
@@ -108,7 +181,7 @@
    color: #79155b;
    font-family: 'Playfair Display', serif;
   font-weight: 700; /* Bold weight */
-  font-size: 2rem; /* Adjust size as needed */
+  font-size: 2rem; Adjust size as needed
   text-transform: uppercase; /* Optional: Make it uppercase for a bold look */
   letter-spacing: 2px; /* Add letter spacing for style */
   } 
